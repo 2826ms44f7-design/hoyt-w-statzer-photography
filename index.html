@@ -6,10 +6,13 @@
 
 <title>Hoyt W. Statzer Photography</title>
 
-<meta name="description"
-content="Hoyt W. Statzer Photography — capturing moments and creating memories. Booking begins January 2027.">
+<meta
+  name="description"
+  content="Hoyt W. Statzer Photography — capturing moments and creating memories. Booking begins January 2027."
+>
 
 <style>
+
 :root{
   --bg:#0b0d0c;
   --panel:#121615;
@@ -40,6 +43,11 @@ a{
   text-decoration:none;
 }
 
+img{
+  max-width:100%;
+  display:block;
+}
+
 button,
 input,
 select,
@@ -49,11 +57,6 @@ textarea{
 
 button{
   cursor:pointer;
-}
-
-img{
-  max-width:100%;
-  display:block;
 }
 
 .container{
@@ -68,6 +71,8 @@ img{
 .hidden{
   display:none!important;
 }
+
+/* BUTTONS */
 
 .btn{
   display:inline-block;
@@ -95,6 +100,8 @@ img{
   color:#fff;
 }
 
+/* SECTIONS */
+
 .section{
   padding:80px 0;
 }
@@ -112,6 +119,8 @@ img{
   max-width:720px;
   margin:0 auto 38px;
 }
+
+/* NAVIGATION */
 
 nav{
   position:sticky;
@@ -155,22 +164,25 @@ nav{
   color:var(--gold);
 }
 
+/* HERO */
+
 .hero{
   min-height:88vh;
   display:flex;
   align-items:center;
   text-align:center;
+
   background:
-  linear-gradient(
-    rgba(5,8,6,.82),
-    rgba(5,8,6,.82)
-  ),
-  radial-gradient(
-    circle at 50% 20%,
-    #31533c 0,
-    #111 50%,
-    #070807 100%
-  );
+    linear-gradient(
+      rgba(5,8,6,.82),
+      rgba(5,8,6,.82)
+    ),
+    radial-gradient(
+      circle at 50% 20%,
+      #31533c 0,
+      #111 50%,
+      #070807 100%
+    );
 }
 
 .hero-inner{
@@ -211,9 +223,12 @@ nav{
   margin-top:30px;
 }
 
+/* CARDS */
+
 .cards{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
   gap:20px;
 }
 
@@ -251,26 +266,37 @@ nav{
   color:#ddd;
 }
 
+/* PORTFOLIO */
+
 .portfolio{
   display:grid;
   grid-template-columns:
-  repeat(auto-fit,minmax(230px,1fr));
+    repeat(auto-fit,minmax(230px,1fr));
   gap:16px;
 }
 
 .photo-placeholder{
   height:260px;
   border-radius:12px;
+
   background:
-  linear-gradient(135deg,#24352c,#111);
+    linear-gradient(
+      135deg,
+      #24352c,
+      #111
+    );
+
   display:flex;
   align-items:center;
   justify-content:center;
+
   color:#b8c0ba;
   border:1px solid var(--line);
   text-align:center;
   padding:20px;
 }
+
+/* ABOUT */
 
 .about-grid{
   display:grid;
@@ -288,7 +314,8 @@ nav{
 
 .steps{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:
+    repeat(3,1fr);
   gap:20px;
 }
 
@@ -312,11 +339,15 @@ nav{
   font-weight:800;
 }
 
+/* FORMS */
+
 .form{
   max-width:760px;
   margin:auto;
+
   background:var(--panel);
   border:1px solid var(--line);
+
   padding:28px;
   border-radius:14px;
 }
@@ -347,8 +378,10 @@ select,
 textarea{
   width:100%;
   padding:12px;
+
   border:1px solid #414844;
   border-radius:7px;
+
   background:#202522;
   color:#fff;
 }
@@ -368,10 +401,16 @@ textarea{
 .notice{
   padding:14px;
   border-radius:8px;
+
   background:#18271e;
   border:1px solid #31543d;
+
   color:#dce9df;
+
+  margin-bottom:15px;
 }
+
+/* STATUS */
 
 .status{
   display:inline-block;
@@ -397,6 +436,8 @@ textarea{
   color:#ff9a9a;
 }
 
+/* FAQ */
+
 .faq{
   max-width:800px;
   margin:auto;
@@ -413,7 +454,10 @@ details{
 summary{
   cursor:pointer;
   font-weight:700;
+  color:#fff;
 }
+
+/* FOOTER */
 
 footer{
   border-top:1px solid var(--line);
@@ -421,6 +465,8 @@ footer{
   color:var(--muted);
   text-align:center;
 }
+
+/* LOGIN */
 
 .overlay-page{
   min-height:100vh;
@@ -431,8 +477,10 @@ footer{
 .login-box{
   width:min(430px,100%);
   margin:50px auto;
+
   background:var(--panel);
   border:1px solid var(--line);
+
   border-radius:16px;
   padding:32px;
   text-align:center;
@@ -450,6 +498,8 @@ footer{
   color:#ff7676;
   min-height:22px;
 }
+
+/* STUDIO */
 
 .studio{
   display:grid;
@@ -474,8 +524,10 @@ footer{
   text-align:left;
   margin:5px 0;
   padding:12px;
+
   border:0;
   border-radius:7px;
+
   background:#171b19;
   color:#fff;
 }
@@ -499,7 +551,7 @@ footer{
 .stat-grid{
   display:grid;
   grid-template-columns:
-  repeat(auto-fit,minmax(180px,1fr));
+    repeat(auto-fit,minmax(180px,1fr));
   gap:18px;
 }
 
@@ -533,10 +585,12 @@ footer{
   border-bottom:0;
 }
 
+/* GALLERIES */
+
 .gallery-grid{
   display:grid;
   grid-template-columns:
-  repeat(auto-fill,minmax(220px,1fr));
+    repeat(auto-fill,minmax(220px,1fr));
   gap:15px;
 }
 
@@ -558,12 +612,16 @@ footer{
   margin:0;
 }
 
+/* CLIENT */
+
 .client-head{
   display:flex;
   justify-content:space-between;
   gap:15px;
   align-items:center;
+
   padding:22px 5%;
+
   background:#070908;
   border-bottom:1px solid var(--line);
 }
@@ -572,6 +630,8 @@ footer{
   color:var(--gold);
   margin:0;
 }
+
+/* MOBILE */
 
 @media(max-width:800px){
 
@@ -609,14 +669,20 @@ footer{
   }
 
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- =========================
+     PUBLIC WEBSITE
+========================= -->
+
 <div id="publicSite">
 
 <nav>
+
 <div class="container nav-inner">
 
 <a class="brand" href="#home">
@@ -624,6 +690,7 @@ HOYT W. <span>STATZER</span> PHOTOGRAPHY
 </a>
 
 <div class="nav-links">
+
 <a href="#portfolio">Portfolio</a>
 <a href="#packages">Packages</a>
 <a href="#booking">Booking</a>
@@ -633,11 +700,15 @@ HOYT W. <span>STATZER</span> PHOTOGRAPHY
 <a href="#faq">FAQ</a>
 <a href="#contact">Contact</a>
 <a href="#login">Client Login</a>
+
 </div>
 
 </div>
+
 </nav>
 
+
+<!-- HERO -->
 
 <section class="hero" id="home">
 
@@ -677,6 +748,8 @@ View Portfolio
 
 </section>
 
+
+<!-- PORTFOLIO -->
 
 <section class="section" id="portfolio">
 
@@ -723,6 +796,8 @@ Add graduation/prom photography here
 </section>
 
 
+<!-- PACKAGES -->
+
 <section class="section" id="packages">
 
 <div class="container">
@@ -737,6 +812,8 @@ Affordable photography with flexible options for whatever you need.
 
 <div class="cards">
 
+
+<!-- MINI -->
 
 <div class="card">
 
@@ -753,9 +830,19 @@ $50
 </p>
 
 <ul class="list">
-<li>1 location</li>
-<li>1 outfit</li>
-<li>15 edited photos</li>
+
+<li>
+1 location
+</li>
+
+<li>
+1 outfit
+</li>
+
+<li>
+15 edited photos
+</li>
+
 </ul>
 
 <div class="package-btn">
@@ -763,7 +850,7 @@ $50
 <button
 class="btn"
 type="button"
-onclick="bookPackage('Mini Session',0.5)"
+onclick="bookPackage('Mini Session',0.5,'$50')"
 >
 BOOK NOW
 </button>
@@ -772,6 +859,8 @@ BOOK NOW
 
 </div>
 
+
+<!-- FULL -->
 
 <div class="card">
 
@@ -788,9 +877,19 @@ $75
 </p>
 
 <ul class="list">
-<li>Up to 2 locations</li>
-<li>Multiple outfits</li>
-<li>40+ edited photos</li>
+
+<li>
+1 location
+</li>
+
+<li>
+Multiple outfits
+</li>
+
+<li>
+40+ edited photos
+</li>
+
 </ul>
 
 <div class="package-btn">
@@ -798,7 +897,7 @@ $75
 <button
 class="btn"
 type="button"
-onclick="bookPackage('Full Session',1)"
+onclick="bookPackage('Full Session',1,'$75')"
 >
 BOOK NOW
 </button>
@@ -807,6 +906,8 @@ BOOK NOW
 
 </div>
 
+
+<!-- DELUXE -->
 
 <div class="card">
 
@@ -823,9 +924,19 @@ $125
 </p>
 
 <ul class="list">
-<li>Up to 3 locations</li>
-<li>Multiple outfits</li>
-<li>75+ edited photos</li>
+
+<li>
+1 location
+</li>
+
+<li>
+Multiple outfits
+</li>
+
+<li>
+75+ edited photos
+</li>
+
 </ul>
 
 <div class="package-btn">
@@ -833,7 +944,7 @@ $125
 <button
 class="btn"
 type="button"
-onclick="bookPackage('Deluxe',2)"
+onclick="bookPackage('Deluxe',2,'$125')"
 >
 BOOK NOW
 </button>
@@ -842,6 +953,8 @@ BOOK NOW
 
 </div>
 
+
+<!-- SENIOR -->
 
 <div class="card">
 
@@ -858,9 +971,19 @@ $100
 </p>
 
 <ul class="list">
-<li>Up to 3 locations</li>
-<li>60+ edited photos</li>
-<li>Cap/gown, sports or hobby options</li>
+
+<li>
+1 location
+</li>
+
+<li>
+60+ edited photos
+</li>
+
+<li>
+Cap/gown, sports or hobby options
+</li>
+
 </ul>
 
 <div class="package-btn">
@@ -868,7 +991,7 @@ $100
 <button
 class="btn"
 type="button"
-onclick="bookPackage('Senior Experience',1.5)"
+onclick="bookPackage('Senior Experience',1.5,'$100')"
 >
 BOOK NOW
 </button>
@@ -877,6 +1000,8 @@ BOOK NOW
 
 </div>
 
+
+<!-- EVENT -->
 
 <div class="card">
 
@@ -893,9 +1018,19 @@ Per hour
 </p>
 
 <ul class="list">
-<li>Birthdays</li>
-<li>Graduations</li>
-<li>School & community events</li>
+
+<li>
+Birthdays
+</li>
+
+<li>
+Graduations
+</li>
+
+<li>
+School & community events
+</li>
+
 </ul>
 
 <div class="package-btn">
@@ -903,7 +1038,7 @@ Per hour
 <button
 class="btn"
 type="button"
-onclick="bookPackage('Event Coverage',1)"
+onclick="bookPackage('Event Coverage',1,'$75/hour')"
 >
 BOOK NOW
 </button>
@@ -912,6 +1047,8 @@ BOOK NOW
 
 </div>
 
+
+<!-- BUILD YOUR OWN -->
 
 <div class="card">
 
@@ -928,9 +1065,19 @@ Custom session
 </p>
 
 <ul class="list">
-<li>Choose your time</li>
-<li>Choose locations</li>
-<li>Built around your needs</li>
+
+<li>
+1 location
+</li>
+
+<li>
+Choose your time
+</li>
+
+<li>
+Built around your needs
+</li>
+
 </ul>
 
 <div class="package-btn">
@@ -938,7 +1085,7 @@ Custom session
 <button
 class="btn"
 type="button"
-onclick="bookPackage('Build Your Own',1)"
+onclick="bookPackage('Build Your Own',1,'$75+')"
 >
 BOOK NOW
 </button>
@@ -953,6 +1100,8 @@ BOOK NOW
 
 </section>
 
+
+<!-- BOOKING -->
 
 <section class="section" id="booking">
 
@@ -974,7 +1123,9 @@ time, location, and service.
 
 <div class="field">
 
-<label>Name</label>
+<label>
+Name
+</label>
 
 <input
 id="bookName"
@@ -986,7 +1137,9 @@ required
 
 <div class="field">
 
-<label>Email</label>
+<label>
+Email
+</label>
 
 <input
 id="bookEmail"
@@ -999,7 +1152,9 @@ required
 
 <div class="field">
 
-<label>Phone Number</label>
+<label>
+Phone Number
+</label>
 
 <input
 id="bookPhone"
@@ -1013,7 +1168,9 @@ required
 
 <div class="field">
 
-<label>Date</label>
+<label>
+Date
+</label>
 
 <input
 id="bookDate"
@@ -1026,7 +1183,9 @@ required
 
 <div class="field">
 
-<label>Start Time</label>
+<label>
+Start Time
+</label>
 
 <input
 id="bookTime"
@@ -1039,7 +1198,9 @@ required
 
 <div class="field">
 
-<label>Hours</label>
+<label>
+Hours
+</label>
 
 <input
 id="bookHours"
@@ -1056,20 +1217,51 @@ oninput="updateTotal()"
 
 <div class="field">
 
-<label>Service</label>
+<label>
+Service
+</label>
 
 <select id="bookService">
 
-<option>Senior Pictures</option>
-<option>Family</option>
-<option>Sports</option>
-<option>Horse / Livestock</option>
-<option>Birthday / Party</option>
-<option>Graduation</option>
-<option>Prom / Homecoming</option>
-<option>Business</option>
-<option>Event Coverage</option>
-<option>Custom</option>
+<option>
+Senior Pictures
+</option>
+
+<option>
+Family
+</option>
+
+<option>
+Sports
+</option>
+
+<option>
+Horse / Livestock
+</option>
+
+<option>
+Birthday / Party
+</option>
+
+<option>
+Graduation
+</option>
+
+<option>
+Prom / Homecoming
+</option>
+
+<option>
+Business
+</option>
+
+<option>
+Event Coverage
+</option>
+
+<option>
+Custom
+</option>
 
 </select>
 
@@ -1078,7 +1270,9 @@ oninput="updateTotal()"
 
 <div class="field full">
 
-<label>Location</label>
+<label>
+Location
+</label>
 
 <input
 id="bookLocation"
@@ -1090,7 +1284,9 @@ placeholder="Where would you like your session?"
 
 <div class="field full">
 
-<label>Notes</label>
+<label>
+Notes
+</label>
 
 <textarea
 id="bookNotes"
@@ -1138,6 +1334,8 @@ class="gold"
 </section>
 
 
+<!-- EVENTS -->
+
 <section class="section" id="events">
 
 <div class="container">
@@ -1170,6 +1368,8 @@ and special sessions.
 
 </section>
 
+
+<!-- ABOUT -->
 
 <section class="section" id="about">
 
@@ -1262,7 +1462,6 @@ Receive your finished photos.
 
 </div>
 
-
 </div>
 
 </div>
@@ -1273,6 +1472,8 @@ Receive your finished photos.
 
 </section>
 
+
+<!-- REVIEWS -->
 
 <section class="section" id="reviews">
 
@@ -1288,19 +1489,43 @@ Client reviews will be added here as sessions are completed.
 
 <div class="cards">
 
-<div class="card">
-<h3>★★★★★</h3>
-<p class="muted">Your review could be here.</p>
-</div>
 
 <div class="card">
-<h3>★★★★★</h3>
-<p class="muted">Your review could be here.</p>
+
+<h3>
+★★★★★
+</h3>
+
+<p class="muted">
+Your review could be here.
+</p>
+
 </div>
 
+
 <div class="card">
-<h3>★★★★★</h3>
-<p class="muted">Your review could be here.</p>
+
+<h3>
+★★★★★
+</h3>
+
+<p class="muted">
+Your review could be here.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+★★★★★
+</h3>
+
+<p class="muted">
+Your review could be here.
+</p>
+
 </div>
 
 </div>
@@ -1309,6 +1534,8 @@ Client reviews will be added here as sessions are completed.
 
 </section>
 
+
+<!-- FAQ -->
 
 <section class="section" id="faq">
 
@@ -1351,20 +1578,6 @@ Package pricing is listed above.
 <details>
 
 <summary>
-Where do sessions take place?
-</summary>
-
-<p>
-Locations are chosen based on the session
-and can be discussed during booking.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
 How will I receive my photos?
 </summary>
 
@@ -1395,6 +1608,8 @@ Yes. Event coverage is $75 per hour.
 </section>
 
 
+<!-- CONTACT -->
+
 <section class="section" id="contact">
 
 <div class="container">
@@ -1413,7 +1628,9 @@ id="contactForm"
 
 <div class="field">
 
-<label>Name</label>
+<label>
+Name
+</label>
 
 <input
 id="contactName"
@@ -1425,7 +1642,9 @@ required
 
 <div class="field">
 
-<label>Email</label>
+<label>
+Email
+</label>
 
 <input
 id="contactEmail"
@@ -1438,7 +1657,9 @@ required
 
 <div class="field full">
 
-<label>Message</label>
+<label>
+Message
+</label>
 
 <textarea
 id="contactMessage"
@@ -1469,6 +1690,8 @@ class="gold"
 
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -1506,7 +1729,9 @@ Client / Photographer Login
 </div>
 
 
-<!-- LOGIN -->
+<!-- =========================
+     LOGIN PAGE
+========================= -->
 
 <div
 id="loginPage"
@@ -1561,7 +1786,9 @@ Back to Website
 </div>
 
 
-<!-- CLIENT PAGE -->
+<!-- =========================
+     CLIENT PAGE
+========================= -->
 
 <div
 id="clientPage"
@@ -1653,7 +1880,9 @@ style="margin-top:35px"
 </div>
 
 
-<!-- HWS STUDIO -->
+<!-- =========================
+     HWS STUDIO
+========================= -->
 
 <div
 id="adminPage"
@@ -1716,6 +1945,8 @@ Sign Out
 <main class="studio-main">
 
 
+<!-- DASHBOARD -->
+
 <section
 id="studioDashboard"
 class="studio-section active"
@@ -1731,6 +1962,7 @@ Welcome to HWS Studio.
 
 <div class="stat-grid">
 
+
 <div class="stat">
 
 Clients
@@ -1741,6 +1973,7 @@ Clients
 
 </div>
 
+
 <div class="stat">
 
 Bookings
@@ -1750,6 +1983,7 @@ Bookings
 </strong>
 
 </div>
+
 
 <div class="stat">
 
@@ -1765,6 +1999,8 @@ $75
 
 </section>
 
+
+<!-- BOOKINGS -->
 
 <section
 id="studioBookings"
@@ -1782,6 +2018,8 @@ class="table-card"
 
 </section>
 
+
+<!-- CLIENTS -->
 
 <section
 id="studioClients"
@@ -1832,6 +2070,8 @@ class="table-card"
 </section>
 
 
+<!-- GALLERIES -->
+
 <section
 id="studioGalleries"
 class="studio-section"
@@ -1879,6 +2119,8 @@ style="margin-top:20px"
 </section>
 
 
+<!-- EVENTS -->
+
 <section
 id="studioEvents"
 class="studio-section"
@@ -1922,6 +2164,8 @@ class="table-card"
 </section>
 
 
+<!-- SETTINGS -->
+
 <section
 id="studioSettings"
 class="studio-section"
@@ -1952,8 +2196,9 @@ storing real private client galleries.
 </p>
 
 <p class="muted">
-Automatic email sending requires a real email
-service/backend.
+Automatic email sending is not connected yet.
+A real email service/backend is required to send
+account invitations and booking confirmations.
 </p>
 
 </div>
@@ -1967,7 +2212,9 @@ service/backend.
 
 <script>
 
-/* PHOTOGRAPHER LOGIN */
+/* =========================
+   PHOTOGRAPHER LOGIN
+========================= */
 
 const PHOTOGRAPHER_EMAIL =
 "hoytphotography@gmail.com";
@@ -1976,7 +2223,9 @@ const PHOTOGRAPHER_PASSWORD =
 "HWS2027!";
 
 
-/* DATA */
+/* =========================
+   DATA
+========================= */
 
 let clients =
 JSON.parse(
@@ -1998,6 +2247,10 @@ JSON.parse(
 localStorage.getItem("hwsGalleries") || "{}"
 );
 
+
+/* =========================
+   SAVE DATA
+========================= */
 
 function saveData(){
 
@@ -2025,43 +2278,70 @@ JSON.stringify(galleries)
 
 
 function $(id){
+
 return document.getElementById(id);
+
 }
 
 
-function escapeHTML(v){
+function escapeHTML(value){
 
-return String(v)
+return String(value)
+
 .replace(/&/g,"&amp;")
+
 .replace(/</g,"&lt;")
+
 .replace(/>/g,"&gt;")
+
 .replace(/"/g,"&quot;")
+
 .replace(/'/g,"&#039;");
 
 }
 
 
-/* PACKAGE BUTTON */
+/* =========================
+   PACKAGE BOOKING
+========================= */
 
 function bookPackage(
 packageName,
-hours
+hours,
+priceLabel
 ){
 
-if(packageName === "Event Coverage"){
-$("bookService").value =
+const service =
+$("bookService");
+
+
+if(
+packageName === "Event Coverage"
+){
+
+service.value =
 "Event Coverage";
+
 }
 
-else if(packageName === "Senior Experience"){
-$("bookService").value =
+else if(
+packageName === "Senior Experience"
+){
+
+service.value =
 "Senior Pictures";
+
 }
 
-else if(packageName === "Build Your Own"){
-$("bookService").value =
+else if(
+packageName === "Build Your Own"
+){
+
+service.value =
 "Custom";
+
 }
+
 
 $("bookHours").value =
 hours < 1 ? 1 : hours;
@@ -2073,21 +2353,29 @@ behavior:"smooth"
 });
 
 setTimeout(
-() => $("bookName").focus(),
+function(){
+
+$("bookName").focus();
+
+},
 500
 );
 
 }
 
 
-/* TOTAL */
+/* =========================
+   TOTAL
+========================= */
 
 function updateTotal(){
 
 const hours =
 Math.max(
 1,
-Number($("bookHours").value) || 1
+Number(
+$("bookHours").value
+) || 1
 );
 
 $("bookingTotal").textContent =
@@ -2098,7 +2386,9 @@ hours * 75;
 updateTotal();
 
 
-/* LOGIN */
+/* =========================
+   LOGIN
+========================= */
 
 function showLogin(){
 
@@ -2155,10 +2445,14 @@ $("loginEmail")
 .toLowerCase();
 
 const password =
-$("loginPassword").value;
+$("loginPassword")
+.value;
 
-$("loginError").textContent = "";
+$("loginError").textContent =
+"";
 
+
+/* PHOTOGRAPHER */
 
 if(
 email ===
@@ -2180,12 +2474,19 @@ return;
 }
 
 
+/* CLIENT */
+
 const client =
 clients.find(
-c =>
+function(c){
+
+return (
 c.email.toLowerCase() === email
 &&
 c.password === password
+);
+
+}
 );
 
 
@@ -2220,7 +2521,9 @@ showPublic();
 }
 
 
-/* ADMIN */
+/* =========================
+   ADMIN
+========================= */
 
 function showAdmin(){
 
@@ -2241,7 +2544,9 @@ updateStudio();
 }
 
 
-/* CLIENT */
+/* =========================
+   CLIENT
+========================= */
 
 function showClient(client){
 
@@ -2258,16 +2563,25 @@ $("clientPage")
 .classList.remove("hidden");
 
 $("clientWelcome").textContent =
-"Welcome, " + client.name + "!";
+"Welcome, " +
+client.name +
+"!";
 
-renderClientGallery(client.id);
+renderClientGallery(
+client.id
+);
 
-renderClientBookingStatus(client.email);
+renderClientBookingStatus(
+client.email
+);
 
-$("changePasswordBox").style.display =
+$("changePasswordBox")
+.style.display =
 client.mustChangePassword
-? "block"
-: "none";
+?
+"block"
+:
+"none";
 
 $("passwordMessage").textContent =
 "";
@@ -2275,7 +2589,9 @@ $("passwordMessage").textContent =
 }
 
 
-/* CLIENT BOOKING STATUS */
+/* =========================
+   CLIENT BOOKING STATUS
+========================= */
 
 function renderClientBookingStatus(
 email
@@ -2283,10 +2599,15 @@ email
 
 const mine =
 bookings.filter(
-b =>
+function(b){
+
+return (
 b.email.toLowerCase()
 ===
 email.toLowerCase()
+);
+
+}
 );
 
 
@@ -2307,29 +2628,40 @@ const status =
 b.status || "pending";
 
 
-const message =
+let message;
+
+
+if(
 status === "confirmed"
+){
 
-?
+message =
+"Your appointment is <strong>CONFIRMED</strong>.";
 
-"Your appointment is <strong>CONFIRMED</strong>."
+}
 
-:
-
+else if(
 status === "declined"
+){
 
-?
+message =
+"Your booking request was <strong>DECLINED</strong>. Please contact Hoyt W. Statzer Photography if you have questions.";
 
-"Your booking request was <strong>DECLINED</strong>. Please contact Hoyt W. Statzer Photography if you have questions."
+}
 
-:
+else{
 
+message =
 "Your booking request is <strong>PENDING</strong>. You will see an update here after it is reviewed.";
 
+}
 
-$("clientBookingStatus").innerHTML =
 
-`<div class="notice">
+$("clientBookingStatus")
+.innerHTML =
+
+`
+<div class="notice">
 
 ${message}
 
@@ -2338,19 +2670,26 @@ ${message}
 <span class="muted">
 
 ${escapeHTML(b.date)}
+
 at
+
 ${escapeHTML(b.time)}
+
 •
+
 ${escapeHTML(b.service)}
 
 </span>
 
-</div>`;
+</div>
+`;
 
 }
 
 
-/* PASSWORD */
+/* =========================
+   CHANGE CLIENT PASSWORD
+========================= */
 
 function changeClientPassword(){
 
@@ -2361,21 +2700,31 @@ sessionStorage.getItem(
 
 const client =
 clients.find(
-c => c.id === userId
+function(c){
+
+return c.id === userId;
+
+}
 );
 
 const newPassword =
-$("newClientPassword").value;
+$("newClientPassword")
+.value;
 
 
 if(!client){
+
 return;
+
 }
 
 
-if(newPassword.length < 6){
+if(
+newPassword.length < 6
+){
 
-$("passwordMessage").textContent =
+$("passwordMessage")
+.textContent =
 "Password must be at least 6 characters.";
 
 return;
@@ -2391,21 +2740,23 @@ false;
 
 saveData();
 
-
-$("newClientPassword").value =
-"";
+$("newClientPassword")
+.value = "";
 
 $("changePasswordBox")
 .style.display =
 "none";
 
-$("passwordMessage").textContent =
+$("passwordMessage")
+.textContent =
 "Password updated successfully.";
 
 }
 
 
-/* STUDIO NAVIGATION */
+/* =========================
+   STUDIO NAVIGATION
+========================= */
 
 function showStudio(id){
 
@@ -2414,8 +2765,13 @@ document
 ".studio-section"
 )
 .forEach(
-s =>
-s.classList.remove("active")
+function(section){
+
+section.classList.remove(
+"active"
+);
+
+}
 );
 
 $(id)
@@ -2428,10 +2784,12 @@ updateStudio();
 
 function updateStudio(){
 
-$("statClients").textContent =
+$("statClients")
+.textContent =
 clients.length;
 
-$("statBookings").textContent =
+$("statBookings")
+.textContent =
 bookings.length;
 
 renderStudioBookings();
@@ -2445,7 +2803,9 @@ populateGalleryClients();
 }
 
 
-/* ADD CLIENT */
+/* =========================
+   ADD CLIENT
+========================= */
 
 function addClient(){
 
@@ -2482,10 +2842,15 @@ return;
 
 if(
 clients.some(
-c =>
+function(c){
+
+return (
 c.email.toLowerCase()
 ===
 email
+);
+
+}
 )
 ){
 
@@ -2504,18 +2869,24 @@ id:
 "client_" +
 Date.now(),
 
+name:
 name,
 
+email:
 email,
 
+password:
 password,
 
-mustChangePassword:false
+mustChangePassword:
+false
 
 };
 
 
-clients.push(client);
+clients.push(
+client
+);
 
 galleries[client.id] =
 [];
@@ -2523,37 +2894,41 @@ galleries[client.id] =
 saveData();
 
 
-$("newClientName").value =
-"";
+$("newClientName")
+.value = "";
 
-$("newClientEmail").value =
-"";
+$("newClientEmail")
+.value = "";
 
-$("newClientPassword").value =
-"";
+$("newClientPassword")
+.value = "";
 
 updateStudio();
 
 alert(
-"Client created."
+"Client created. Give the client their email and password."
 );
 
 }
 
 
-/* CLIENT LIST */
+/* =========================
+   CLIENT LIST
+========================= */
 
 function renderStudioClients(){
 
-$("studioClientList").innerHTML =
+$("studioClientList")
+.innerHTML =
 
 clients.length
 
 ?
 
-clients
-.map(
-c => `
+clients.map(
+function(c){
+
+return `
 
 <div class="item">
 
@@ -2579,9 +2954,10 @@ Delete
 
 </div>
 
-`
-)
-.join("")
+`;
+
+}
+).join("")
 
 :
 
@@ -2597,12 +2973,19 @@ if(
 "Delete this client and their gallery?"
 )
 ){
+
 return;
+
 }
+
 
 clients =
 clients.filter(
-c => c.id !== id
+function(c){
+
+return c.id !== id;
+
+}
 );
 
 delete galleries[id];
@@ -2614,43 +2997,54 @@ updateStudio();
 }
 
 
-/* GALLERY CLIENTS */
+/* =========================
+   GALLERY CLIENTS
+========================= */
 
 function populateGalleryClients(){
 
-$("galleryClientSelect").innerHTML =
+$("galleryClientSelect")
+.innerHTML =
 
 '<option value="">Choose a client</option>'
 
 +
 
-clients
-.map(
-c =>
+clients.map(
+function(c){
 
-`<option value="${c.id}">
+return `
+
+<option value="${c.id}">
 
 ${escapeHTML(c.name)}
 —
 ${escapeHTML(c.email)}
 
-</option>`
-)
-.join("");
+</option>
+
+`;
+
+}
+).join("");
 
 }
 
 
-/* UPLOAD */
+/* =========================
+   UPLOAD PHOTOS
+========================= */
 
 function uploadPhotos(){
 
 const id =
-$("galleryClientSelect").value;
+$("galleryClientSelect")
+.value;
 
 const files =
 [
-...$("photoFiles").files
+...
+$("photoFiles").files
 ];
 
 
@@ -2688,14 +3082,14 @@ let done = 0;
 
 
 files.forEach(
-file => {
+function(file){
 
 const reader =
 new FileReader();
 
 
 reader.onload =
-e => {
+function(e){
 
 galleries[id].push({
 
@@ -2723,10 +3117,11 @@ done === files.length
 
 saveData();
 
-$("photoFiles").value =
-"";
+$("photoFiles")
+.value = "";
 
-$("uploadStatus").textContent =
+$("uploadStatus")
+.textContent =
 "Photos added.";
 
 renderAdminGallery();
@@ -2736,7 +3131,9 @@ renderAdminGallery();
 };
 
 
-reader.readAsDataURL(file);
+reader.readAsDataURL(
+file
+);
 
 }
 );
@@ -2744,12 +3141,15 @@ reader.readAsDataURL(file);
 }
 
 
-/* ADMIN GALLERY */
+/* =========================
+   ADMIN GALLERY
+========================= */
 
 function renderAdminGallery(){
 
 const id =
-$("galleryClientSelect").value;
+$("galleryClientSelect")
+.value;
 
 
 if(!id){
@@ -2766,15 +3166,17 @@ const photos =
 galleries[id] || [];
 
 
-$("adminGallery").innerHTML =
+$("adminGallery")
+.innerHTML =
 
 photos.length
 
 ?
 
-photos
-.map(
-p => `
+photos.map(
+function(p){
+
+return `
 
 <div class="gallery-photo">
 
@@ -2796,9 +3198,10 @@ Delete
 
 </div>
 
-`
-)
-.join("")
+`;
+
+}
+).join("")
 
 :
 
@@ -2817,7 +3220,9 @@ if(
 "Delete this photo?"
 )
 ){
+
 return;
+
 }
 
 
@@ -2826,10 +3231,12 @@ galleries[clientId] =
 galleries[clientId] ||
 []
 ).filter(
-p =>
-p.id !== photoId
-);
+function(p){
 
+return p.id !== photoId;
+
+}
+);
 
 saveData();
 
@@ -2838,7 +3245,9 @@ renderAdminGallery();
 }
 
 
-/* CLIENT GALLERY */
+/* =========================
+   CLIENT GALLERY
+========================= */
 
 function renderClientGallery(id){
 
@@ -2846,15 +3255,17 @@ const photos =
 galleries[id] || [];
 
 
-$("clientGallery").innerHTML =
+$("clientGallery")
+.innerHTML =
 
 photos.length
 
 ?
 
-photos
-.map(
-p => `
+photos.map(
+function(p){
+
+return `
 
 <div class="gallery-photo">
 
@@ -2869,9 +3280,10 @@ ${escapeHTML(p.name)}
 
 </div>
 
-`
-)
-.join("")
+`;
+
+}
+).join("")
 
 :
 
@@ -2887,8 +3299,7 @@ Your gallery is being prepared.
 </h3>
 
 <p class="muted">
-Your photographer has not uploaded
-your photos yet.
+Your photographer has not uploaded your photos yet.
 </p>
 
 </div>
@@ -2898,19 +3309,23 @@ your photos yet.
 }
 
 
-/* BOOKINGS */
+/* =========================
+   BOOKINGS
+========================= */
 
 function renderStudioBookings(){
 
-$("studioBookingList").innerHTML =
+$("studioBookingList")
+.innerHTML =
 
 bookings.length
 
 ?
 
-bookings
-.map(
-b => `
+bookings.map(
+function(b){
+
+return `
 
 <div class="item">
 
@@ -2933,7 +3348,9 @@ b.phone ||
 <br>
 
 ${escapeHTML(b.date)}
+
 at
+
 ${escapeHTML(b.time)}
 
 <br>
@@ -2941,9 +3358,13 @@ ${escapeHTML(b.time)}
 ${escapeHTML(b.service)}
 
 •
+
 ${b.hours}
+
 hour(s)
+
 •
+
 <span class="gold">
 $${b.total}
 </span>
@@ -2971,10 +3392,16 @@ b.notes ||
 <span
 class="status ${b.status || "pending"}"
 >
-${(b.status || "pending").toUpperCase()}
+
+${(
+b.status ||
+"pending"
+).toUpperCase()}
+
 </span>
 
 <br>
+
 
 ${
 b.status !== "confirmed"
@@ -2996,6 +3423,7 @@ CONFIRM
 :
 
 ""
+
 }
 
 
@@ -3019,13 +3447,15 @@ DECLINE
 :
 
 ""
+
 }
 
 </div>
 
-`
-)
-.join("")
+`;
+
+}
+).join("")
 
 :
 
@@ -3034,7 +3464,9 @@ DECLINE
 }
 
 
-/* CONFIRM BOOKING */
+/* =========================
+   CONFIRM / DECLINE
+========================= */
 
 function setBookingStatus(
 id,
@@ -3043,16 +3475,24 @@ status
 
 const booking =
 bookings.find(
-b => b.id === id
+function(b){
+
+return b.id === id;
+
+}
 );
 
 
 if(!booking){
+
 return;
+
 }
 
 
-if(status === "confirmed"){
+if(
+status === "confirmed"
+){
 
 booking.status =
 "confirmed";
@@ -3060,10 +3500,15 @@ booking.status =
 
 let client =
 clients.find(
-c =>
+function(c){
+
+return (
 c.email.toLowerCase()
 ===
 booking.email.toLowerCase()
+);
+
+}
 );
 
 
@@ -3103,7 +3548,9 @@ true
 };
 
 
-clients.push(client);
+clients.push(
+client
+);
 
 galleries[client.id] =
 [];
@@ -3116,11 +3563,13 @@ saveData();
 updateStudio();
 
 
-if(temporaryPassword){
+if(
+temporaryPassword
+){
 
 alert(
 
-"BOOKING CONFIRMED!\n\n" +
+"Booking confirmed and client account created.\n\n" +
 
 "Client: " +
 booking.name +
@@ -3130,15 +3579,11 @@ booking.name +
 booking.email +
 "\n" +
 
-"Phone: " +
-booking.phone +
-"\n\n" +
-
 "Temporary password: " +
 temporaryPassword +
 "\n\n" +
 
-"Give the client this temporary password. They can log in and create their own password."
+"Send the client their login information and have them change the temporary password."
 
 );
 
@@ -3147,7 +3592,7 @@ temporaryPassword +
 else{
 
 alert(
-"Booking confirmed. This client already has an account."
+"Booking confirmed. The client already has an account."
 );
 
 }
@@ -3171,19 +3616,23 @@ alert(
 }
 
 
-/* EVENTS */
+/* =========================
+   EVENTS
+========================= */
 
 function renderStudioEvents(){
 
-$("studioEventList").innerHTML =
+$("studioEventList")
+.innerHTML =
 
 events.length
 
 ?
 
-events
-.map(
-e => `
+events.map(
+function(e){
+
+return `
 
 <div class="item">
 
@@ -3201,9 +3650,10 @@ ${escapeHTML(e.location)}
 
 </div>
 
-`
-)
-.join("")
+`;
+
+}
+).join("")
 
 :
 
@@ -3220,7 +3670,8 @@ $("eventName")
 .trim();
 
 const date =
-$("eventDate").value;
+$("eventDate")
+.value;
 
 const location =
 $("eventLocation")
@@ -3248,10 +3699,13 @@ events.push({
 id:
 Date.now(),
 
+name:
 name,
 
+date:
 date,
 
+location:
 location
 
 });
@@ -3260,26 +3714,28 @@ location
 saveData();
 
 
-$("eventName").value =
-"";
+$("eventName")
+.value = "";
 
-$("eventDate").value =
-"";
+$("eventDate")
+.value = "";
 
-$("eventLocation").value =
-"";
+$("eventLocation")
+.value = "";
 
 updateStudio();
 
 }
 
 
-/* BOOKING FORM */
+/* =========================
+   BOOKING FORM
+========================= */
 
 $("bookingForm")
 .addEventListener(
 "submit",
-e => {
+function(e){
 
 e.preventDefault();
 
@@ -3314,15 +3770,19 @@ $("bookPhone")
 .trim(),
 
 date:
-$("bookDate").value,
+$("bookDate")
+.value,
 
 time:
-$("bookTime").value,
+$("bookTime")
+.value,
 
+hours:
 hours,
 
 service:
-$("bookService").value,
+$("bookService")
+.value,
 
 location:
 $("bookLocation")
@@ -3350,21 +3810,25 @@ e.target.reset();
 updateTotal();
 
 
-$("bookingMessage").textContent =
+$("bookingMessage")
+.textContent =
 "Booking request received! You will need to confirm the appointment.";
 
 }
 );
 
 
-/* CONTACT */
+/* =========================
+   CONTACT FORM
+========================= */
 
 $("contactForm")
 .addEventListener(
 "submit",
-e => {
+function(e){
 
 e.preventDefault();
+
 
 $("contactMessageStatus")
 .textContent =
@@ -3376,18 +3840,20 @@ e.target.reset();
 );
 
 
-/* LOGIN LINKS */
+/* =========================
+   LOGIN LINKS
+========================= */
 
 document
 .querySelectorAll(
 'a[href="#login"]'
 )
 .forEach(
-a => {
+function(a){
 
 a.addEventListener(
 "click",
-e => {
+function(e){
 
 e.preventDefault();
 
@@ -3400,11 +3866,13 @@ showLogin();
 );
 
 
-/* START */
+/* =========================
+   START WEBSITE
+========================= */
 
 window.addEventListener(
 "DOMContentLoaded",
-() => {
+function(){
 
 const user =
 sessionStorage.getItem(
@@ -3425,8 +3893,11 @@ else if(user){
 
 const client =
 clients.find(
-c =>
-c.id === user
+function(c){
+
+return c.id === user;
+
+}
 );
 
 
@@ -3457,147 +3928,3 @@ showPublic();
 
 </body>
 </html>
-<section class="section" id="packages">
-
-<div class="container">
-
-<h2 class="section-title">
-Packages & Pricing
-</h2>
-
-<p class="section-subtitle">
-Affordable photography with flexible options for whatever you need.
-</p>
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-Mini Session
-</h3>
-
-<div class="price">
-$50
-</div>
-
-<p>
-30 minutes
-</p>
-
-<ul class="list">
-<li>1 outfit</li>
-<li>15 edited photos</li>
-<li>Perfect for quick sessions</li>
-</ul>
-
-<div class="package-btn">
-
-<button
-class="btn"
-type="button"
-onclick="bookPackage('Mini Session',0.5)"
->
-BOOK NOW
-</button>
-
-</div>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-Full Session
-</h3>
-
-<div class="price">
-$75
-</div>
-
-<p>
-1 hour
-</p>
-
-<ul class="list">
-<li>Multiple outfits</li>
-<li>40+ edited photos</li>
-<li>Great for portraits and families</li>
-</ul>
-
-<div class="package-btn">
-
-<button
-class="btn"
-type="button"
-onclick="bookPackage('Full Session',1)"
->
-BOOK NOW
-</button>
-
-</div>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-Deluxe
-</h3>
-
-<div class="price">
-$125
-</div>
-
-<p>
-2 hours
-</p>
-
-<ul class="list">
-<li>Multiple outfits</li>
-<li>75+ edited photos</li>
-<li>Extra time for a variety of photos</li>
-</ul>
-
-<div class="package-btn">
-
-<button
-class="btn"
-type="button"
-onclick="bookPackage('Deluxe',2)"
->
-BOOK NOW
-</button>
-
-</div>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-Senior Experience
-</h3>
-
-<div class="price">
-$100
-</div>
-
-<p>
-1.5 hours
-</p>
-
-<ul class="list">
-<li>Multiple outfits</li>
-<li>60+ edited photos</li>
-<li>Sports, hobbies, cap & gown options</li>
-</ul>
-
-<div class="package-btn">
-
-<button
-class="btn"
